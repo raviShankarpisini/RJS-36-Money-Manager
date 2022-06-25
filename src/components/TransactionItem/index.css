@@ -1,0 +1,23 @@
+/* Write your CSS here */
+.list-item {
+  display: flex;
+  flex-direction: row;
+  border: solid 1px #d7dfe9;
+  /* justify-content: space-between; */
+}
+.para {
+  font-family: 'Roboto';
+  font-size: 14px;
+  color: #334155;
+  width: 80px;
+}
+button {
+  cursor: pointer;
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
+.delete-image {
+  height: 20px;
+  width: 20px;
+}

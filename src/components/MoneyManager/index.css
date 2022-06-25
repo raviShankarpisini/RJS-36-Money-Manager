@@ -1,0 +1,131 @@
+/* Write your CSS here */
+.app-container {
+  display: flex;
+  background-color: white;
+  height: 100vh;
+  overflow: scroll;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  /* padding: 30px; */
+  flex-wrap: wrap;
+}
+.money-manager-container {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  width: 70vw;
+}
+.user-container {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/money-manager/money-manager-bg.png');
+  width: 100;
+  border-radius: 10px;
+  margin-top: 20px;
+  background-size: cover;
+  height: 100;
+}
+.user-name {
+  font-family: 'Roboto';
+  font-size: 25px;
+  color: #475569;
+  font-weight: bold;
+  padding-left: 10px;
+}
+.user-description {
+  font-family: 'Roboto';
+  font-size: 16px;
+  color: #475569;
+  padding-left: 10px;
+}
+span {
+  color: #0b69ff;
+  font-weight: bold;
+}
+.bottom-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.transaction-container {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border-radius: 10px;
+  border: solid 1px #475569;
+  align-items: flex-start;
+  height: 100%;
+}
+.transaction-heading {
+  font-family: 'Roboto';
+  font-size: 16px;
+  color: #475569;
+  font-weight: bold;
+}
+label {
+  font-size: 14px;
+  font-family: 'Roboto';
+  color: #475569;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+select {
+  width: 100%;
+  height: 25px;
+}
+.submit-button {
+  padding: 4px;
+  color: white;
+  background-color: #0b69ff;
+  margin-top: 10px;
+  width: 50px;
+  height: 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+}
+.history-container {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  border: solid #475569 1px;
+  border-radius: 10px;
+  width: 40;
+}
+.history-heading {
+  font-family: 'Roboto';
+  font-size: 16px;
+  color: #475569;
+}
+.history-top {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-between; */
+  border-top: solid 1px #d7dfe9;
+}
+.table-heading {
+  color: #475569;
+  font-size: 14px;
+  font-weight: bold;
+  /* margin-right: 30px; */
+  width: 80px;
+}
+.history-list-container {
+  padding: 0px;
+  list-style: none;
+}
+.sub-container {
+  border: solid #d7dfe9 1px;
+  padding: 10px;
+}
+@media screen and (max-width: 576px) {
+  .user-container {
+    text-align: center;
+  }
+  .bottom-container {
+    flex-direction: column;
+  }
+  .history-container {
+    margin-top: 20px;
+  }
+}

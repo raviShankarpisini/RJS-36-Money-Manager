@@ -1,0 +1,66 @@
+/* Write your CSS here */
+.MoneyDetails-Container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.card-container {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-between; */
+  padding: 10px;
+  border-radius: 10px;
+  width: 250px;
+  height: 100px;
+}
+.card-balance {
+  border: solid 1px #84cc16;
+
+  background-color: #ecfccb;
+  opacity: 0.7;
+}
+.card-income {
+  border: solid 1px #06b6d4;
+
+  background-color: #cffafe;
+  opacity: 0.7;
+}
+.card-expenses {
+  border: solid 1px #7c3aed;
+
+  background-color: #ede9fe;
+  opacity: 0.7;
+}
+img {
+  height: 50px;
+  width: 50px;
+  align-self: center;
+}
+.text-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  justify-content: center;
+  /* align-items: center; */
+}
+.heading-style {
+  font-family: 'Roboto';
+  font-size: 14px;
+  color: black;
+}
+.amount-style {
+  font-family: 'Roboto';
+  font-size: 25px;
+  color: black;
+}
+@media screen and (max-width: 576px) {
+  .MoneyDetails-Container {
+    flex-direction: column;
+  }
+  .card-container {
+    margin-top: 10px;
+  }
+}
