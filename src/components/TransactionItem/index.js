@@ -3,7 +3,7 @@ import './index.css'
 
 const TransactionItem = props => {
   const {eachItem, deleteHistoryItem} = props
-  const {id, type, amount, title} = eachItem
+  const {id, optionId, amount, title} = eachItem
   const onClickDelete = () => {
     deleteHistoryItem(id)
   }
@@ -11,7 +11,7 @@ const TransactionItem = props => {
     <li className="list-item">
       <p className="para">{title}</p>
       <p className="para">Rs {amount}</p>
-      <p className="para">{type}</p>
+      <p className="para">{optionId.toLowerCase()}</p>
       <button type="button" onClick={onClickDelete} testid="delete">
         <img
           className="delete-image"

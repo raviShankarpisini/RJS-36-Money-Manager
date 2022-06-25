@@ -75,7 +75,7 @@ class MoneyManager extends Component {
     )
     const {optionId, amount} = selectingDeletingItem
 
-    if (optionId === 'Income') {
+    if (optionId === 'INCOME') {
       this.setState(prevState => ({
         Income: parseInt(prevState.Income) - parseInt(amount),
       }))
